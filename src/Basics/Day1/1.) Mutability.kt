@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 
 //Why immutable is good?
@@ -54,7 +54,7 @@ fun main() {
     println(newListOfNumbersFromImmutable)
     println(listOfNumbers)
 
-    val filteredList = listOfNumbersMutable.filter { it>3 }.map{someArithmetic(it, 3)}
+    val filteredList = listOfNumbersMutable.filter { it>3 }.map{ someArithmetic(it, 3) }
     println(filteredList)
 }
 

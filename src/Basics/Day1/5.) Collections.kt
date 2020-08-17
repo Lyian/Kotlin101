@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 val double = {x:Int -> 2*x}
 
@@ -30,7 +30,7 @@ fun main() {
 
     println(listOfNumbers.map { double(it) })
     println(
-        listOfNumbers.filter { it< 5 }.map{ double(it)}
+        listOfNumbers.filter { it< 5 }.map{ double(it) }
     )
 
     println("Minus operator ${listOfNumbers - 4}")

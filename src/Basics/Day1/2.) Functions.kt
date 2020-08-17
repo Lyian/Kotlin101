@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 /**
  * F is for friends who do stuff together

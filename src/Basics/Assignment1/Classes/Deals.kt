@@ -1,4 +1,4 @@
-package Basics.Project.Classes
+package Basics.Assignment1.Classes
 
 enum class Status(val numericValue: Int){
     STARTED(0),

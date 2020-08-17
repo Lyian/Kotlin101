@@ -1,4 +1,4 @@
-package Basics.Project.Classes
+package Basics.Assignment1.Classes
 
 import kotlin.random.Random
 

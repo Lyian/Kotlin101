@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 interface StandardDeal{
     var user : String
@@ -12,7 +12,8 @@ interface StandardDeal{
     fun correctData(deal: Deal)
 }
 
-class GasDeal(override var user: String, override val menge: Float, override val marge: Float) : StandardDeal{
+class GasDeal(override var user: String, override val menge: Float, override val marge: Float) :
+    StandardDeal {
     override fun getUserAndContactViaMail() {
         TODO("Not yet implemented")
     }
@@ -52,7 +53,7 @@ class GasDeal(override var user: String, override val menge: Float, override val
 fun main() {
     val gasDeal = GasDeal("K27601", 100f, 20f)
     gasDeal.replaceUser("H7949")
-    val anotherGasDeal =  GasDeal("H7949", 100f, 20f)
+    val anotherGasDeal = GasDeal("H7949", 100f, 20f)
 
 
     println(gasDeal)

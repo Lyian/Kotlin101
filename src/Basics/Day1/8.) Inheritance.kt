@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 open class Deals(var user: String, val isRelevant: Boolean){
     open val marge = 0
@@ -20,7 +20,7 @@ class ServiceDeal(user:String, var secondaryUser: String, isRelevant2: Boolean =
 
 fun main() {
     val stromDeal = StromDeal("K27601", true, 20)
-    val serviceDeal = ServiceDeal("K27601", "",true)
+    val serviceDeal = ServiceDeal("K27601", "", true)
 
     stromDeal.replaceUser("H7949")
     serviceDeal.replaceUser("H7949", secondKID = "T27633")

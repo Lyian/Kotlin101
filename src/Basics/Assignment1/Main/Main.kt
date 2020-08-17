@@ -1,6 +1,6 @@
-package Basics.Project.Main
+package Basics.Assignment1.Main
 
-import Basics.Project.Classes.*
+import Basics.Assignment1.Classes.*
 
 /**
  * Assignment 1

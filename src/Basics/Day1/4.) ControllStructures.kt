@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 
 fun testNumberInBetween(x: Int) = when(x){

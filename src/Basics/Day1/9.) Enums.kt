@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 enum class Vertrag(val typeID: Int) {
     Gas(1 ),

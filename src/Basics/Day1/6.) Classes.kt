@@ -1,4 +1,4 @@
-package Basics
+package Basics.Day1
 
 import java.time.LocalDateTime
 
@@ -29,12 +29,13 @@ class VeGASDealsList{
 
 
 fun main() {
-    val singleDeal = Deal("50000010", "TestDeal 1", 20, "k27601", LocalDateTime.now().minusDays(1))
+    val singleDeal =
+        Deal("50000010", "TestDeal 1", 20, "k27601", LocalDateTime.now().minusDays(1))
     val anotherDeal = singleDeal.copy(id="50000011")
     println(singleDeal)
     println(anotherDeal)
 
-    val deals = VeGASDealsList(listOf(singleDeal,anotherDeal))
+    val deals = VeGASDealsList(listOf(singleDeal, anotherDeal))
     println(deals)
    // val dealsList = listOf<Deal>(singleDeal, )
 }
