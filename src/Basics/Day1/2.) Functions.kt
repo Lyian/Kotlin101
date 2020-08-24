@@ -14,27 +14,25 @@ fun calculateProductViaSum(x: Int = 2, y: Int = 3, skipSecondIteration: Boolean 
         for(i in 1..x step 2) {tmp += y}
     else
         for(i in 1..x) {tmp += y}
+
     return tmp
 }
 
 //Single Expression
-fun square(x: Int ): Int  = x*x
+fun square(x: String ): Boolean  = x == "1"
 
-//Generic functions
+//Generic functions List<Autos>, List<Schiffe>, ...
 fun <T> singletonList(ourList: List<T>): List<T> {
     val list = ourList.toMutableList()
     list.removeAt(0)
     return list
 }
 
-//
-
-
 fun main() {
     println(calculateProductViaSum())
-    println(calculateProductViaSum(10, 20, skipSecondIteration = true))
+    println(calculateProductViaSum(x= 2, y=3, skipSecondIteration = true))
 
-    println(square(2))
+    println(square("10"))
 
 //Scope
 }

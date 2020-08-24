@@ -33,13 +33,14 @@ var aMutableProperty: String = "34534"
 
 
 fun main() {
-    var aMutableNumber: Int = 42
+    var aMutableNumber: Int = 32
     val immutableNumber: Int = aMutableNumber
     val someText = "That's a cool number you got there $aMutableNumber, and even ${immutableNumber} is here!"
 
     aMutableNumber = 30
     val anotherText = someText
-    println(aMutableNumber*immutableNumber)
+
+    println(aMutableNumber.div(immutableNumber))
     println(someText)
     println(anotherText)
 
@@ -55,6 +56,8 @@ fun main() {
     println(listOfNumbers)
 
     val filteredList = listOfNumbersMutable.filter { it>3 }.map{ someArithmetic(it, 3) }
+
+
     println(filteredList)
 }
 

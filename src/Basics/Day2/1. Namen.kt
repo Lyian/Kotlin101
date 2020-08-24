@@ -60,11 +60,11 @@ fun main() {
     val testAccountAdmin = ""
 
     //7.
-    val einVertrag = class Deal
+   /* val einVertrag = class Deal
 
     val Deal = class Deal
 
-    //8.)
+   //8.)
     fetchTime()
     getTime()
     retrieveTime()
@@ -74,5 +74,5 @@ fun main() {
     setNewTime()
 
     removeTime()
-    deleteTime()
+    deleteTime()*/
 }

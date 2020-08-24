@@ -9,9 +9,14 @@ fun main() {
     val vegasDeals2 = listOf<String>("Deal1", "Deal2", "Deal2", "Deal4", "Deal5")
     //vegasDeals2 = listOf()
 
+
     val vegasDealsMutable = vegasDeals2.toMutableList()
+    vegasDealsMutable.add("Test2")
+
     val vegasDealsSet = vegasDeals2.toSet()
     val vegasDealsMap = mapOf("Deal1" to "A deal in vegas", "Deal2" to "Another cool deal in Vegas")
+
+    vegasDealsMap.get("Deal1")
 
     println("Inmutable list $vegasDeals")
     println("Mutable list $vegasDealsMutable")
@@ -22,7 +27,7 @@ fun main() {
 
     println("___________________________________")
 
-    val listOfNumbers = listOf(1,2,3,4,5,6,7,8,9)
+    val listOfNumbers = listOf(1,2,3,4,4,5,6,7,8,9)
     println(listOfNumbers.filter {
         10 <= it*2
     })
@@ -31,9 +36,17 @@ fun main() {
     println(listOfNumbers.map { double(it) })
     println(
         listOfNumbers.filter { it< 5 }.map{ double(it) }
+
     )
 
+
+    println(listOfNumbers.map { it-4 })
+
     println("Minus operator ${listOfNumbers - 4}")
+
+    for (holgers in listOfNumbers){
+        println(holgers-4)
+    }
 
     //Deal Pegasus ID (PegasusPos1,PegasusPos2, etc...)
 }

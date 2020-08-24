@@ -25,9 +25,9 @@ val toBoolean = {x: String -> x == "1"}
 
 
 fun main() {
-    println(highLambda(11, checkIfPrime))
+    println(highLambda(10, checkIfPrime))
     println(highLambda(9, checkIfDivisbleBy3))
-    //println(highLambda(highLambda(???, checkIfPrime), checkIfDivisbleBy3))
+    println(highLambda(highLambda(3, checkIfPrime), checkIfDivisbleBy3))
 
     println(toBoolean("1"))
     println(toBoolean("0"))
