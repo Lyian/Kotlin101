@@ -1,9 +1,5 @@
 package Basics.Assignment1.Classes
 
-enum class ContractType{
-    GAS, STROM, CUSTOM
-}
-
 // Menge für Strom in kwh
 // Menge für Gas ist m3
 // Die Mengen für Custom Verträge sind variabel
