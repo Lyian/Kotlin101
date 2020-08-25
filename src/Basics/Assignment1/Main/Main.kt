@@ -39,4 +39,6 @@ fun main(){
     val contract5 = Contract(5, ContractType.CUSTOM, 100f, 100f, persons)
     val contractList = listOf(contract1, contract2,contract3, contract4, contract5)
     val firstDeal = Deals(1, "first Deal of the Day", contractList, persons, Status.STARTED, "Rasenmäher Repairshop GmbH u. CO. KG.")
+    
+    firstDeal.calculateMengenFromContracts()
 }

@@ -35,8 +35,7 @@ fun main() {
 
     println(listOfNumbers.map { double(it) })
     println(
-        listOfNumbers.filter { it< 5 }.map{ double(it) }
-
+        listOfNumbers.filter { it < 5 }.map{ double(it) }
     )
 
 

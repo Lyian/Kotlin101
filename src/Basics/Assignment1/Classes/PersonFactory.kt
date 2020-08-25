@@ -5,7 +5,7 @@ import kotlin.random.Random
 class PersonFactory {
     val listOfFirstnames = listOf<String>("Holger", "Tori", "Kevin", "Juljan", "Jürgen", "Roland", "Peter", "Vladimir", "Martin")
     val listOfSurnames = listOf<String>("Leppkes", "Albrecht", "Yu", "Irgendwas", "Zufall", "Mensch", "Bauer", "Müller", "Test", "Raffy", "Bäcker")
-    val listOfStatus = listOf<String>("traine", "intern", "extern", "manager", "ceo", "kam")
+    val listOfStatus = listOf<String>("trainee", "intern", "extern", "manager", "ceo", "kam")
 
 
     fun getListOfPeople(countOfPeople: Int): List<User>{
